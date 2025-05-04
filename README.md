@@ -38,6 +38,16 @@ cd shorty
 shards install
 ```	
 
+### 3. Run the API:
+
+```bash
+crystal run src/shorty.cr
+```
+### API Endpoints
+- `POST /shorten` - Shorten a URL
+- `GET /:short_code` - Redirect to the original URL
+- `GET /stats/:short_code` - Returns the number of times the short URL has been accessed
+
 ---
 
 
